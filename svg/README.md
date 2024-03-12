@@ -1,1 +1,1 @@
-(https://github.com/runohod/zakrivayuschiy-teg-f.git)
+https://github.com/runohod/zakrivayuschiy-teg-f.git
