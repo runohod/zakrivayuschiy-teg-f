@@ -6,48 +6,51 @@
 */
 
 :root.theme-light {
-    --headings-font-weight: 700;
-    --page-main-font-weight: 400;
-    --button-text-color: var(--color-white, #fff);
-    --text-color: var(--color-black, #000000);
-    --page-background-color: var(--color-white, #ffffff);
-    --page-background-image: repeating-linear-gradient(
-        to left,
-        #d3d3d3 0 2px,
-        #d3d3d300 2px 4px
-      ),
-      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
-      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --bold-font-weight: 700;
+  --regular-font-weight: 400;
+  --background-color: #fff;
+  --accent-color: #000;
+  --background-image-color-gradient: #d3d3d3;
+  --background-image-horizontal-gradient-start: #e7e7e7;
+  --background-image-horizontal-gradient-end: #1a1a1a;
+  --text-color: #000;
+  --card__image-text-shadow: #fff;
+  --button-background-color: #000;
+  --button-text-color: #fff;
+  --button-image-color: #fff;
+  --heart-contour-color: #000;
+}
+
+:root.theme-dark {
+  --bold-font-weight: 785;
+  --regular-font-weight: 465;
+  --background-color: #000;
+  --accent-color: #00cc14;
+  --background-image-color-gradient: #000;
+  --background-image-horizontal-gradient-start: #007f0c;
+  --background-image-horizontal-gradient-end: #004306;
+  --text-color: #00CC14;
+  --card__image-text-shadow: #000;
+  --button-background-color: #00CC14;
+  --button-text-color: #00CC14;
+  --button-image-color: #00CC14;
+  --heart-contour-color: #00CC14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bold-font-weight: 785;
+    --regular-font-weight: 465;
+    --background-color: #000;
+    --accent-color: #00cc14;
+    --background-image-color-gradient: #000;
+    --background-image-horizontal-gradient-start: #007f0c;
+    --background-image-horizontal-gradient-end: #004306;
+    --text-color: #00CC14;
+    --card__image-text-shadow: #000;
+    --button-background-color: #00CC14;
+    --button-text-color: #00CC14;
+    --button-image-color: #00CC14;
+    --heart-contour-color: #00CC14;
   }
-  
-  :root.theme-dark {
-    --headings-font-weight: 785;
-    --page-main-font-weight: 465;
-    --button-text-color: var(--color-green, #00cc14);
-    --text-color: var(--color-green, #00cc14);
-    --page-background-color: var(--color-black, #000000);
-    --page-background-image: repeating-linear-gradient(
-        to left,
-        #000000 0 2px,
-        #00000000 2px 4px
-      ),
-      repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
-      linear-gradient(to bottom, #007f0c, #004306);
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --headings-font-weight: 785;
-      --page-main-font-weight: 465;
-      --button-text-color: var(--color-green, #00cc14);
-      --text-color: var(--color-green, #00cc14);
-      --page-background-color: var(--color-black, #000000);
-      --page-background-image: repeating-linear-gradient(
-          to left,
-          #000000 0 2px,
-          #00000000 2px 4px
-        ),
-        repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
-        linear-gradient(to bottom, #007f0c, #004306);
-    }
-  }
+}
